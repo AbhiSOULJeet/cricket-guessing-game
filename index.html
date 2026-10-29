@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Legends Guess</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-glow glow-1"></div>
+    <div class="background-glow glow-2"></div>
+
+    <div class="app">
+      <header class="topbar">
+        <div class="title-wrap">
+          <span class="badge">CRICKET LEGENDS</span>
+          <h1>Guess the Player</h1>
+        </div>
+        <button id="randomBtn" class="random-btn">Random Player</button>
+      </header>
+
+      <main class="game-grid">
+        <section class="stage-panel">
+          <div class="spinner-wrapper">
+            <div id="spinner" class="spinner" aria-label="Random player selector">
+              <div class="spinner-center">🏏</div>
+            </div>
+          </div>
+
+          <div class="mystery-box">
+            <div id="avatar" class="avatar">?</div>
+            <div class="player-text">
+              <p class="label">Mystery Cricketer</p>
+              <h2 id="mysteryName">?????</h2>
+              <p id="mysteryMeta">Country • Role</p>
+              <div id="trophyList" class="trophy-list"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="choices-panel">
+          <div class="panel-header">
+            <h3>Choose the correct player</h3>
+            <span class="small-pill">250 players • post-1980</span>
+          </div>
+          <div id="options" class="options" aria-live="polite"></div>
+          <p id="status" class="status">Ready for a fresh round!</p>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
